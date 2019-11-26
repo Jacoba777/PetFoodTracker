@@ -17,7 +17,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="edu.oakland.petfoodtracker.MakeManagerActivity12" />
+        <activity android:name="edu.oakland.petfoodtracker.ManageMembersActivity11" />
+        <activity android:name="edu.oakland.petfoodtracker.ManageHHActivity10" />
+        <activity android:name="edu.oakland.petfoodtracker.FedPetManageActivity9" />
+        <activity android:name="edu.oakland.petfoodtracker.FedPetActivity8" />
+        <activity android:name="edu.oakland.petfoodtracker.FeedPetActivity7" />
         <activity android:name="edu.oakland.petfoodtracker.CreateHHSuccessActivity6" />
         <activity android:name="edu.oakland.petfoodtracker.CreateHHActivity5" />
         <activity android:name="edu.oakland.petfoodtracker.JoinHHFailActivity4" />

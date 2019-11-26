@@ -24,7 +24,7 @@
         android:id="@+id/HomeBtn1"
         android:text="JOIN HOUSEHOLD"
         android:textSize="30sp"
-        android:layout_below="@+id/homepageTV"
+        android:layout_below="@id/homepageTV"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="130dp"/>
 
@@ -35,6 +35,6 @@
         android:text="CREATE HOUSEHOLD"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/HomeBtn1"
+        android:layout_below="@id/HomeBtn1"
         android:layout_marginTop="50dp"/>
 </RelativeLayout>

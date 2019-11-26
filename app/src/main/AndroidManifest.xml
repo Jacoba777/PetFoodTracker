@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateHHSuccessActivity6"></activity>
+        <activity android:name=".MakeManagerActivity12"></activity>
+        <activity android:name=".ManageMembersActivity11" />
+        <activity android:name=".ManageHHActivity10" />
+        <activity android:name=".FedPetManageActivity9" />
+        <activity android:name=".FedPetActivity8" />
+        <activity android:name=".FeedPetActivity7" />
+        <activity android:name=".CreateHHSuccessActivity6" />
         <activity android:name=".CreateHHActivity5" />
         <activity android:name=".JoinHHFailActivity4" />
         <activity android:name=".JoinHHSuccessActivity3" />

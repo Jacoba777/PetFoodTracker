@@ -50,7 +50,7 @@
         android:textSize="30sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/CreateHHSuccessTV3"/>
+        android:layout_below="@id/CreateHHSuccessTV3"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/CreateHHSuccessTV6"
-        android:layout_below="@+id/CreateHHSuccessTV5"
+        android:layout_below="@id/CreateHHSuccessTV5"
         android:gravity="center"
         android:textStyle="bold"
         android:layout_marginStart="58dp"
