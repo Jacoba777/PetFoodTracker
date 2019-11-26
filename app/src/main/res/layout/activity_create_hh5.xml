@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
     tools:context=".CreateHHActivity5">
+
     <TextView
         android:id="@+id/JoinHH2TV"
         android:layout_width="wrap_content"
@@ -16,6 +17,7 @@
         android:textStyle="bold"
         android:layout_marginTop="40dp"
         android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,6 +29,7 @@
         android:textStyle="bold"
         android:text="Your Name : "
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -35,6 +38,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:id="@+id/URNmET"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,6 +50,7 @@
         android:layout_marginTop="20dp"
         android:text="Household Name :"
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -54,6 +59,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:layout_below="@id/HHIDTV"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,6 +71,7 @@
         android:layout_marginTop="20dp"
         android:text="Household Password : "
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -73,6 +80,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:layout_below="@id/HHPWTV"/>
+
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
@@ -83,6 +91,5 @@
         android:textSize="30sp"
         android:text="CREATE HOUSEHOLD"
         />
-
 
 </RelativeLayout>
