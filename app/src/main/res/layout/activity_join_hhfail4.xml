@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".JoinHHFailActivity4">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JoinHHFailTV"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Sorry, but that password \n is incorrect for this \n household ID."
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/JoinHHFailBtn1"
+        android:layout_below="@id/JoinHHFailTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="RETRY"
+        android:textSize="30sp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/JoinHHFailBtn2"
+        android:layout_below="@id/JoinHHFailBtn1"
+        android:layout_centerHorizontal="true"
+        android:text="CANCEL"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

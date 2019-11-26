@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homepageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:text="You are not currently paired with a household. \n Would you like to create or join one?"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/HomeBtn1"
+        android:text="JOIN HOUSEHOLD"
+        android:textSize="30sp"
+        android:layout_below="@+id/homepageTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/HomeBtn2"
+        android:text="CREATE HOUSEHOLD"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/HomeBtn1"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>

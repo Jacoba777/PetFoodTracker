@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".CreateHHSuccessActivity6">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV1"
+        android:layout_marginTop="90dp"
+        android:text="Congrats, "
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessET1"
+        android:textSize="30sp"
+        android:layout_marginTop="90dp"
+        android:layout_toEndOf="@+id/CreateHHSuccessTV1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV2"
+        android:layout_toEndOf="@id/CreateHHSuccessET1"
+        android:text="!"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV3"
+        android:text="You've just created"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@id/CreateHHSuccessTV2"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessET2"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CreateHHSuccessTV3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV4"
+        android:text="."
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/CreateHHSuccessTV3"
+        android:layout_toEndOf="@id/CreateHHSuccessET2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV5"
+        android:layout_below="@id/CreateHHSuccessET2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Please send this ID to your household members along with your household password."
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessTV6"
+        android:layout_below="@+id/CreateHHSuccessTV5"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="20dp"
+        android:text="Household ID : "
+        android:textSize="30sp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateHHSuccessET3"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_below="@id/CreateHHSuccessTV6"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/JoinHHSuccessBtn"
+        android:text="OK"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/CreateHHSuccessET3"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
