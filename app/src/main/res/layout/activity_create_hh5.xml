@@ -90,6 +90,6 @@
         android:layout_marginTop="40dp"
         android:textSize="30sp"
         android:text="CREATE HOUSEHOLD"
-        />
+        android:onClick="createHH"/>
 
 </RelativeLayout>

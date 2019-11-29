@@ -78,8 +78,8 @@
         android:text="LEAVE HOUSEHOLD"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/feedpetBtn1"
-        android:layout_marginTop="150dp"/>
+        android:layout_alignParentBottom="true"
+        android:onClick="leaveHH"/>
 
 
 </RelativeLayout>

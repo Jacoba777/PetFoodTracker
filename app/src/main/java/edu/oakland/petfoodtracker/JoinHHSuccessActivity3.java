@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class JoinHHSuccessActivity3 extends AppCompatActivity {
@@ -21,5 +22,10 @@ public class JoinHHSuccessActivity3 extends AppCompatActivity {
 
         txt_success = findViewById(R.id.JoinHHSuccessTV);
         txt_success.setText(success_msg);
+    }
+
+    public void finish(View view)
+    {
+        finish();
     }
 }
