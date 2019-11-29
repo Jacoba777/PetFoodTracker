@@ -17,9 +17,9 @@
         <activity android:name=".FeedPetActivity7" />
         <activity android:name=".CreateHHSuccessActivity6" />
         <activity android:name=".CreateHHActivity5" />
-        <activity android:name=".JoinHHFailActivity4" />
-        <activity android:name=".JoinHHSuccessActivity3" />
-        <activity android:name=".JoinHHActivity2" />
+        <activity android:name=".JoinHHFailActivity4" android:noHistory="true"/>
+        <activity android:name=".JoinHHSuccessActivity3" android:noHistory="true"/>
+        <activity android:name=".JoinHHActivity2" android:noHistory="true"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

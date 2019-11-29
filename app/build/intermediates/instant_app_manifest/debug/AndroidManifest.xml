@@ -27,9 +27,15 @@
         <activity android:name="edu.oakland.petfoodtracker.FeedPetActivity7" />
         <activity android:name="edu.oakland.petfoodtracker.CreateHHSuccessActivity6" />
         <activity android:name="edu.oakland.petfoodtracker.CreateHHActivity5" />
-        <activity android:name="edu.oakland.petfoodtracker.JoinHHFailActivity4" />
-        <activity android:name="edu.oakland.petfoodtracker.JoinHHSuccessActivity3" />
-        <activity android:name="edu.oakland.petfoodtracker.JoinHHActivity2" />
+        <activity
+            android:name="edu.oakland.petfoodtracker.JoinHHFailActivity4"
+            android:noHistory="true" />
+        <activity
+            android:name="edu.oakland.petfoodtracker.JoinHHSuccessActivity3"
+            android:noHistory="true" />
+        <activity
+            android:name="edu.oakland.petfoodtracker.JoinHHActivity2"
+            android:noHistory="true" />
         <activity android:name="edu.oakland.petfoodtracker.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

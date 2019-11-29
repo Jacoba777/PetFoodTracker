@@ -26,7 +26,8 @@
         android:textSize="30sp"
         android:layout_below="@id/homepageTV"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"/>
+        android:layout_marginTop="130dp"
+        android:onClick="route_joinHH"/>
 
     <Button
         android:layout_width="320dp"
@@ -36,10 +37,6 @@
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/HomeBtn1"
-        android:layout_marginTop="50dp"/>
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/list"/>
+        android:layout_marginTop="50dp"
+        android:onClick="route_createHH"/>
 </RelativeLayout>

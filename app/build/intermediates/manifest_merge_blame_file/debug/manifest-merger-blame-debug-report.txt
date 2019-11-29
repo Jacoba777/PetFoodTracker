@@ -52,29 +52,38 @@
 28        <activity android:name="edu.oakland.petfoodtracker.CreateHHActivity5" />
 28-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:19:9-55
 28-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:19:19-52
-29        <activity android:name="edu.oakland.petfoodtracker.JoinHHFailActivity4" />
-29-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:9-57
-29-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:19-54
-30        <activity android:name="edu.oakland.petfoodtracker.JoinHHSuccessActivity3" />
-30-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:9-60
-30-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:19-57
-31        <activity android:name="edu.oakland.petfoodtracker.JoinHHActivity2" />
-31-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:9-53
-31-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:19-50
-32        <activity android:name="edu.oakland.petfoodtracker.MainActivity" >
-32-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:23:9-29:20
-32-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:23:19-47
-33            <intent-filter>
-33-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:24:13-28:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:25:17-69
-34-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:25:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:27:17-77
-36-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:27:27-74
-37            </intent-filter>
-38        </activity>
-39    </application>
-40
-41</manifest>
+29        <activity
+29-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:9-81
+30            android:name="edu.oakland.petfoodtracker.JoinHHFailActivity4"
+30-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:19-54
+31            android:noHistory="true" />
+31-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:55-79
+32        <activity
+32-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:9-84
+33            android:name="edu.oakland.petfoodtracker.JoinHHSuccessActivity3"
+33-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:19-57
+34            android:noHistory="true" />
+34-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:58-82
+35        <activity
+35-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:9-77
+36            android:name="edu.oakland.petfoodtracker.JoinHHActivity2"
+36-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:19-50
+37            android:noHistory="true" />
+37-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:51-75
+38        <activity android:name="edu.oakland.petfoodtracker.MainActivity" >
+38-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:23:9-29:20
+38-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:23:19-47
+39            <intent-filter>
+39-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:24:13-28:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:25:17-69
+40-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:25:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:27:17-77
+42-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:27:27-74
+43            </intent-filter>
+44        </activity>
+45    </application>
+46
+47</manifest>

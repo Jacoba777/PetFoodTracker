@@ -103,15 +103,21 @@ ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\An
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:19:19-52
 activity#edu.oakland.petfoodtracker.JoinHHFailActivity4
-ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:9-57
+ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:9-81
+	android:noHistory
+		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:55-79
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:20:19-54
 activity#edu.oakland.petfoodtracker.JoinHHSuccessActivity3
-ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:9-60
+ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:9-84
+	android:noHistory
+		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:58-82
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:21:19-57
 activity#edu.oakland.petfoodtracker.JoinHHActivity2
-ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:9-53
+ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:9-77
+	android:noHistory
+		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:51-75
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:22:19-50
 activity#edu.oakland.petfoodtracker.MainActivity

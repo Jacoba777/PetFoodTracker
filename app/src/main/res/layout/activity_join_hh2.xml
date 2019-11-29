@@ -17,6 +17,7 @@
         android:textStyle="bold"
         android:layout_marginTop="40dp"
         android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
         android:textStyle="bold"
         android:text="Your Name: "
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -36,6 +38,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:id="@+id/URNmET"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +50,7 @@
         android:text="Household ID:"
         android:textStyle="bold"
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -55,6 +59,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:layout_below="@id/HHIDTV"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,6 +71,7 @@
         android:layout_marginTop="20dp"
         android:text="Household Password: "
         android:textSize="30sp"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -74,6 +80,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:layout_below="@id/HHPWTV"/>
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -82,7 +89,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:textSize="30sp"
-        android:text="JOIN HOUSEHOLD" />
+        android:text="JOIN HOUSEHOLD"
+        android:onClick="joinHH"/>
 
 
 </RelativeLayout>
