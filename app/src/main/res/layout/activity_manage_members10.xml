@@ -6,65 +6,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    tools:context=".ManageHHActivity10">
+    tools:context=".ManageMembersActivity10">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ManageHHTV"
-        android:text="Manage Household: Please select an option"
+        android:id="@+id/ManageMemberTV1"
+        android:text="Manage Members: Select \n a household member to change their permissions"
         android:textSize="30sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginTop="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ManageMemberTV2"
+        android:text="Household Member:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/ManageMemberTV1"
+        android:layout_marginTop="20dp"/>
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/MMSpinner"
+        android:layout_below="@id/ManageMemberTV2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:id="@+id/ManageHHBtn1"
-        android:text="MANAGE MEMBERS"
+        android:id="@+id/ManageMemberBtn1"
+        android:text="SET HOUSEHOLD MANAGER"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/ManageHHTV"
+        android:layout_below="@id/MMSpinner"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="80dp"/>
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:id="@+id/ManageHHBtn2"
-        android:text="UPDATE PET NAME"
+        android:id="@+id/ManageMemberBtn2"
+        android:text="REMOVE MEMBER"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/ManageHHBtn1"
+        android:layout_below="@id/ManageMemberBtn1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:id="@+id/ManageHHBtn3"
-        android:text="CHANGE PASSWORD"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@id/ManageHHBtn2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/ManageHHBtn4"
-        android:text="DELETE PASSWORD"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@id/ManageHHBtn3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/ManageHHBtn5"
+        android:id="@+id/ManageMemberBtn3"
         android:text="CANCEL"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/ManageHHBtn4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+
+
+
 
 </RelativeLayout>
