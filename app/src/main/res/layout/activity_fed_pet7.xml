@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
-    tools:context=".FedPetActivity8">
-
+    tools:context=".FedPetActivity7">
     <EditText
         android:layout_width="190dp"
         android:layout_height="wrap_content"
@@ -77,31 +76,15 @@
         android:layout_marginTop="130dp"
         android:layout_below="@id/fedpetTV2"
         android:layout_toEndOf="@id/fedpetBtn1"/>
-    <Button
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetBtn3"
-        android:text="Time"
-        android:textSize="30sp"
-        android:layout_below="@id/fedpetTV2"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="200dp"/>
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetET5"
-        android:textSize="30sp"
-        android:layout_below="@id/fedpetET4"
-        android:layout_toEndOf="@id/fedpetBtn3"/>
+
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:id="@+id/fedpetBtn2"
         android:text="LEAVE HOUSEHOLD"
         android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/fedpetBtn1"
-        android:layout_marginTop="150dp"/>
-
+        android:layout_marginStart="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
 
 </RelativeLayout>

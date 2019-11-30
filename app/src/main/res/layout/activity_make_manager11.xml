@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeManagerActivity11">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerTV1"
+        android:text="Are you sure you want to"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerTV2"
+        android:text="make"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/MakeManagerTV1"/>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerET1"
+        android:layout_toEndOf="@id/MakeManagerTV2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerTV3"
+        android:text="the new manager for"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/MakeManagerTV2"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerET2"
+        android:layout_below="@id/MakeManagerTV3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerTV4"
+        android:text="? "
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@id/MakeManagerTV3"
+        android:layout_toEndOf="@id/MakeManagerET2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerTV5"
+        android:text="This will remove you as \n the manager. You will \n not be able to undo this \n later without asking them \n to set you as the \n household manager again."
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@id/MakeManagerET2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerBtn1"
+        android:text="YES"
+        android:textSize="30dp"
+        android:layout_below="@id/MakeManagerTV5"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/MakeManagerBtn2"
+        android:text="NO"
+        android:textSize="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+
+</RelativeLayout>

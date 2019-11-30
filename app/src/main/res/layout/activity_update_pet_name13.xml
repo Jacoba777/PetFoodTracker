@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".UpdatePetNameActivity13">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdatePetNameTV1"
+        android:text="Upadate Pet Name:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdatePetNameTV2"
+        android:layout_below="@id/UpdatePetNameTV1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="150dp"
+        android:text="Pet Name:"
+        android:textSize="30sp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdatePetNameEV1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_below="@id/UpdatePetNameTV2"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdatePetNameBtn1"
+        android:text="UPDATE PET NAME"
+        android:textSize="30sp"
+        android:layout_marginStart="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpdatePetNameBtn2"
+        android:text="CANCEL"
+        android:textSize="30sp"
+        android:layout_marginStart="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+
+
+</RelativeLayout>

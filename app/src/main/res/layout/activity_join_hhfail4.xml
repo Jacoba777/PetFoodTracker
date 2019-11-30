@@ -30,10 +30,10 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/JoinHHFailBtn2"
-        android:layout_below="@id/JoinHHFailBtn1"
-        android:layout_centerHorizontal="true"
         android:text="CANCEL"
         android:textSize="30sp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginStart="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
 
 </RelativeLayout>
