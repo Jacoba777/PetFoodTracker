@@ -38,6 +38,8 @@ public class JoinHHActivity2 extends AppCompatActivity {
         String password = et_password.getText().toString();
         String id = et_id.getText().toString();
 
+        System.out.println(name + password + id);
+
         Cursor res = db.rawQuery(String.format("SELECT id, name FROM household WHERE hex_code='%s' AND password='%s'", id, password), null);
         res.moveToFirst();
         int count = res.getCount();
@@ -60,18 +62,19 @@ public class JoinHHActivity2 extends AppCompatActivity {
             Intent intent = new Intent(this, JoinHHSuccessActivity3.class);
             intent.putExtra("user_name", name);
             intent.putExtra("HH_name", household_name);
+            db.close();
             startActivity(intent);
         }
         else if(count > 1) // This should never happen. This occurs if two households have the same hex code.
         {
             Toast.makeText(this, "ERROR: This hex code is not unique.", Toast.LENGTH_SHORT).show();
+            db.close();
         }
         else // Either hex code is wrong or the password doesn't match.
         {
+            db.close();
             Intent intent = new Intent(this, JoinHHFailActivity4.class);
             startActivity(intent);
         }
-
-        db.close();
     }
 }

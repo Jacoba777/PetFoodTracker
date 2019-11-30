@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Switch to the pet feed activity if the local user is in a household
         if(inHousehold())
         {
-            Intent intent = new Intent(this, FeedPetActivity7.class);
+            Intent intent = new Intent(this, FedPetActivity7.class);
             startActivity(intent);
             finish();
         }

@@ -27,8 +27,6 @@ public class CreateHHActivity5 extends AppCompatActivity {
         et_username = findViewById(R.id.URNmET);
         et_hh_name = findViewById(R.id.HHIDET);
         et_hh_password = findViewById(R.id.HHPWET);
-
-
     }
 
     public void createHH(View view)
@@ -58,6 +56,7 @@ public class CreateHHActivity5 extends AppCompatActivity {
         Cursor cursor = db.rawQuery("select last_insert_rowid()", null);
         cursor.moveToFirst();
         int hh_id = cursor.getInt(0);
+        cursor.close();
 
         // Create new user, add this user to the new household as the manager
         db.execSQL(String.format(Locale.US, "INSERT INTO user (name, household_id, manager) VALUES ('%s', '%s', '%d')", username, hh_id, 1));
@@ -66,9 +65,12 @@ public class CreateHHActivity5 extends AppCompatActivity {
         cursor = db.rawQuery("select last_insert_rowid()", null);
         cursor.moveToFirst();
         int user_id = cursor.getInt(0);
+        cursor.close();
 
         // Set the local user for this phone as the current user
         db.execSQL(String.format(Locale.US, "UPDATE local SET user_id=%d, household_id=%d WHERE id=1", user_id, hh_id));
+
+        db.close();
 
         Intent intent = new Intent(this, CreateHHSuccessActivity6.class);
         startActivity(intent);
