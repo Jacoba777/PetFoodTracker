@@ -26,7 +26,8 @@
         android:textSize="30sp"
         android:layout_below="@id/homepageTV"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"/>
+        android:layout_marginTop="130dp"
+        android:onClick="route_joinHH"/>
 
     <Button
         android:layout_width="320dp"
@@ -36,5 +37,6 @@
         android:textSize="30sp"
         android:layout_marginStart="45dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="100dp"
+        android:onClick="route_createHH"/>
 </RelativeLayout>
