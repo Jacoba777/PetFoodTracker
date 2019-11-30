@@ -22,6 +22,8 @@ public class FeedPetActivity7 extends AppCompatActivity {
     }
 
     // TODO: Move to OK button on confirm once it is loaded
+    // TODO: Add logic to delete the household if there are no members left after leaving
+    // TODO: Prompt for household to be deleted if the manager deletes it
     public void leaveHH(View view)
     {
         db = DBHelper.getDB(this);
