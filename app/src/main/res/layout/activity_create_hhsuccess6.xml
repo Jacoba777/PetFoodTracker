@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/CreateHHSuccessTV1"
         android:layout_marginTop="90dp"
-        android:text="Congrats, !You've just created . \n Please send this ID to your household members along with your household password. "
+        android:text="Congrats, ! You've just created . \n Please send this ID to your household members along with your household password. "
         android:textStyle="bold"
         android:layout_marginStart="20dp"
         android:textSize="30sp"/>
