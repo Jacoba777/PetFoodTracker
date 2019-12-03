@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LeaveHHActivity16"></activity>
-        <activity android:name=".DeleteHHActivity15" />
-        <activity android:name=".ChangePasswordActivity14" />
-        <activity android:name=".UpdatePetNameActivity13" />
-        <activity android:name=".RemoveHHActivity12" />
-        <activity android:name=".MakeManagerActivity11" />
-        <activity android:name=".ManageMembersActivity10" />
+        <activity android:name=".LeaveHHActivity16" android:noHistory="true"/>
+        <activity android:name=".DeleteHHActivity15" android:noHistory="true"/>
+        <activity android:name=".ChangePasswordActivity14" android:noHistory="true"/>
+        <activity android:name=".UpdatePetNameActivity13" android:noHistory="true"/>
+        <activity android:name=".RemoveHHActivity12" android:noHistory="true"/>
+        <activity android:name=".MakeManagerActivity11" android:noHistory="true"/>
+        <activity android:name=".ManageMembersActivity10"/>
         <activity android:name=".ManageHHActivity9" />
-        <activity android:name=".FedPetManageActivity8" />
         <activity android:name=".FedPetActivity7" />
-        <activity android:name=".CreateHHSuccessActivity6" />
-        <activity android:name=".CreateHHActivity5" />
+        <activity android:name=".CreateHHSuccessActivity6" android:noHistory="true"/>
+        <activity android:name=".CreateHHActivity5" android:noHistory="true"/>
         <activity android:name=".JoinHHFailActivity4" android:noHistory="true"/>
         <activity android:name=".JoinHHSuccessActivity3" android:noHistory="true"/>
         <activity android:name=".JoinHHActivity2" android:noHistory="true"/>
