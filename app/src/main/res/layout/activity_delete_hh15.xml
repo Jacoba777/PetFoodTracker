@@ -11,55 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/DeleteHHTV1"
-        android:text="Are you sure you want to"
+        android:text="Are you sure you want to delete ? Everyone in the household \n will be removed."
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_marginStart="60dp"
         android:layout_marginTop="100dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/DeleteHHTV2"
-        android:text="delete"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginStart="40dp"
-        android:layout_below="@id/DeleteHHTV1"/>
 
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/DeleteHHET1"
-        android:layout_below="@id/DeleteHHTV1"
-        android:layout_toEndOf="@id/DeleteHHTV2"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/DeleteHHTV3"
-        android:layout_toEndOf="@id/DeleteHHET1"
-        android:text="?"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@id/DeleteHHTV1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/DeleteHHTV4"
-        android:text="Everyone in the household \n will be removed"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_below="@id/DeleteHHTV2"
-        android:layout_centerHorizontal="true"/>
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/DeleteHHBtn1"
         android:text="YES"
         android:textSize="30dp"
-        android:layout_below="@id/DeleteHHTV4"
+        android:layout_below="@id/DeleteHHTV1"
         android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"/>
     <Button

@@ -1,92 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
     tools:context=".FedPetActivity7">
-    <EditText
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetET1"
-        android:textSize="30sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="120dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fedpetTV1"
-        android:layout_toEndOf="@id/fedpetET1"
-        android:text="was fed"
+        android:layout_centerHorizontal="true"
+        android:text="was last fed x hours ago by ."
         android:textStyle="bold"
         android:layout_marginTop="120dp"
         android:textSize="30sp"/>
-    <EditText
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetET2"
-        android:textSize="30sp"
-        android:layout_marginStart="30dp"
-        android:layout_below="@id/fedpetET1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetTV2"
-        android:text="hours ago by"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@id/fedpetTV1"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@id/fedpetET2"/>
-    <EditText
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetET3"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/fedpetTV2"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetTV3"
-        android:layout_toEndOf="@id/fedpetET3"
-        android:text="."
-        android:textStyle="bold"
-        android:layout_below="@id/fedpetTV2"
-        android:layout_marginTop="30dp"
-        android:textSize="30sp"/>
 
     <Button
-        android:layout_width="110dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/fedpetBtn1"
         android:text="I FED"
         android:textSize="30sp"
-        android:layout_below="@id/fedpetTV2"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="110dp"
-        android:onClick="feedPet"/>
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/fedpetET4"
-        android:textSize="30sp"
-        android:layout_marginTop="130dp"
-        android:layout_below="@id/fedpetTV2"
-        android:layout_toEndOf="@id/fedpetBtn1"/>
+        android:layout_above="@id/fedpetBtn2"
+        android:layout_centerHorizontal="true"/>
 
     <Button
-        android:layout_width="320dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/fedpetBtn2"
         android:text="LEAVE HOUSEHOLD"
         android:textSize="30sp"
-        android:layout_marginStart="45dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:onClick="leaveHH"/>
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>
