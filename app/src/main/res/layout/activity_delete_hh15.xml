@@ -25,17 +25,19 @@
         android:id="@+id/DeleteHHBtn1"
         android:text="YES"
         android:textSize="30dp"
-        android:layout_below="@id/DeleteHHTV1"
+        android:layout_above="@id/DeleteHHBtn2"
         android:layout_marginTop="200dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="deleteHH"/>
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/DeleteHHBtn2"
         android:text="NO"
         android:textSize="30dp"
-        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="100dp"
+        android:onClick="finish"/>
 
 </RelativeLayout>

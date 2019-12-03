@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Locale;
-import java.util.Random;
 
 public class CreateHHActivity5 extends AppCompatActivity {
 
@@ -82,12 +81,12 @@ public class CreateHHActivity5 extends AppCompatActivity {
         String hex = Long.toHexString(x).toUpperCase();
 
         // Pad 0s until we have 8 characters
-        for (int i = hex.length(); i < 8; i++) {
+        while (hex.length() < 8) {
             hex = "0" + hex;
         }
 
         // Add a hyphen to mask string
-        hex = hex.substring(0, 3) + "-" + hex.substring(4);
+        hex = hex.substring(0, 4) + "-" + hex.substring(4);
 
         return hex;
     }

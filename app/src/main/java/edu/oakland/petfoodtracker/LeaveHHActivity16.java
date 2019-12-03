@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -14,24 +15,37 @@ import java.util.Locale;
 public class LeaveHHActivity16 extends AppCompatActivity {
 
     SQLiteDatabase db;
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_leave_hh16 );
+        tv = findViewById(R.id.RemoveHHTV1);
+
+        refreshFields();
     }
 
-    // TODO: Move to OK button on confirm once it is loaded
-    // TODO: Add logic to delete the household if there are no members left after leaving
-    // TODO: Prompt for household to be deleted if the manager deletes it
+    private void refreshFields()
+    {
+        int hh_id = DBHelper.getHHID(this);
+
+        SQLiteDatabase db = DBHelper.getDB(this);
+        Cursor c = db.rawQuery("SELECT name FROM household WHERE id=" + hh_id, null);
+        c.moveToFirst();
+        String hhname = c.getString(0);
+        c.close();
+        db.close();
+
+        tv.setText(String.format("Are you sure you want to leave %s?", hhname));
+    }
+
+
     public void leaveHH(View view)
     {
         db = DBHelper.getDB(this);
 
-        Cursor cursor =  db.rawQuery("SELECT user_id, household_id FROM local", null);
-        cursor.moveToFirst();
-
-        int user_id = cursor.getInt(0);
+        int user_id = DBHelper.getUserID(this);
 
         // Delete the user from the household
         db.execSQL("DELETE FROM user WHERE id = " + user_id);
@@ -43,6 +57,11 @@ public class LeaveHHActivity16 extends AppCompatActivity {
         startActivity(intent);
 
         db.close();
+        finish();
+    }
+
+    public void finish(View view)
+    {
         finish();
     }
 }

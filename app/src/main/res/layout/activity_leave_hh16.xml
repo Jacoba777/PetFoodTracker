@@ -25,18 +25,20 @@
         android:id="@+id/RemoveHHBtn1"
         android:text="YES"
         android:textSize="30dp"
-        android:layout_below="@id/RemoveHHTV1"
+        android:layout_above="@id/RemoveHHBtn2"
         android:layout_marginTop="220dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="leaveHH"/>
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/RemoveHHBtn2"
         android:text="NO"
         android:textSize="30dp"
-        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="finish"/>
 
 
 </RelativeLayout>
