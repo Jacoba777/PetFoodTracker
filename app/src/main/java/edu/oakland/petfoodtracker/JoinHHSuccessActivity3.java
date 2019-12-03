@@ -20,7 +20,7 @@ public class JoinHHSuccessActivity3 extends AppCompatActivity {
 
         String success_msg = String.format("Congrats, %s! You've just joined the %s household.", intent.getStringExtra("user_name"), intent.getStringExtra("HH_name"));
 
-        txt_success = findViewById(R.id.JoinHHSuccessTV);
+        txt_success = findViewById(R.id.JoinHHSuccessTV1);
         txt_success.setText(success_msg);
     }
 

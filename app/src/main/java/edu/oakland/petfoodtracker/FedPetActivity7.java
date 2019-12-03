@@ -22,7 +22,7 @@ public class FedPetActivity7 extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_fed_pet7 );
 
-        txt_lastfed = findViewById(R.id.fedpetTV2);
+        txt_lastfed = findViewById(R.id.fedpetTV1);
         refreshLastFed();
     }
 
@@ -32,7 +32,7 @@ public class FedPetActivity7 extends AppCompatActivity {
         super.onResume();
         setContentView( R.layout.activity_fed_pet7 );
 
-        txt_lastfed = findViewById(R.id.fedpetTV2);
+        txt_lastfed = findViewById(R.id.fedpetTV1);
         refreshLastFed();
     }
 
@@ -83,7 +83,7 @@ public class FedPetActivity7 extends AppCompatActivity {
 
     public void feedPet(View view)
     {
-        txt_lastfed = findViewById(R.id.fedpetTV2);
+        txt_lastfed = findViewById(R.id.fedpetTV1);
         db = DBHelper.getDB(this);
         long unixNow = System.currentTimeMillis() / 1000L;
 
