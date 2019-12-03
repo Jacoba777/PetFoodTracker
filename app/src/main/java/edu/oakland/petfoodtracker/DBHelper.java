@@ -130,14 +130,32 @@ public class DBHelper extends SQLiteOpenHelper {
         return db;
     }
 
-    public static Cursor queryDB(SQLiteDatabase db, String query)
+    public static int getUserID(Context context)
     {
-        ArrayList<String> res = new ArrayList<>();
+        SQLiteDatabase db = getDB(context);
 
-        Cursor cursor = db.rawQuery(query, null);
+        Cursor cursor =  db.rawQuery("SELECT user_id FROM local", null);
         cursor.moveToFirst();
+        int res = cursor.getInt(0);
 
-        return cursor;
+        cursor.close();
+        db.close();
+
+        return res;
+    }
+
+    public static int getHHID(Context context)
+    {
+        SQLiteDatabase db = getDB(context);
+
+        Cursor cursor =  db.rawQuery("SELECT household_id FROM local", null);
+        cursor.moveToFirst();
+        int res = cursor.getInt(0);
+
+        cursor.close();
+        db.close();
+
+        return res;
     }
 
 

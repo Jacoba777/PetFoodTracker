@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -22,6 +23,7 @@ public class FedPetActivity7 extends AppCompatActivity {
         setContentView( R.layout.activity_fed_pet7 );
 
         txt_lastfed = findViewById(R.id.fedpetTV2);
+        refreshLastFed();
     }
 
     @Override
@@ -30,6 +32,7 @@ public class FedPetActivity7 extends AppCompatActivity {
         super.onResume();
         setContentView( R.layout.activity_fed_pet7 );
 
+        txt_lastfed = findViewById(R.id.fedpetTV2);
         refreshLastFed();
     }
 
@@ -40,11 +43,7 @@ public class FedPetActivity7 extends AppCompatActivity {
     {
         db = DBHelper.getDB(this);
 
-        Cursor cursor =  db.rawQuery("SELECT user_id, household_id FROM local", null);
-        cursor.moveToFirst();
-
-        int user_id = cursor.getInt(0);
-        cursor.close();
+        int user_id = DBHelper.getUserID(this);
 
         // Delete the user from the household
         db.execSQL("DELETE FROM user WHERE id = " + user_id);
@@ -59,26 +58,47 @@ public class FedPetActivity7 extends AppCompatActivity {
         finish();
     }
 
+    public void leaveHHManager(View view)
+    {
+        db = DBHelper.getDB(this);
+
+        int user_id = DBHelper.getUserID(this);
+        int hh_id = DBHelper.getHHID(this);
+
+        // Delete all users from the household
+        db.execSQL("DELETE FROM user WHERE household_id = " + user_id);
+
+        // Delete the user from the local device
+        db.execSQL("UPDATE local SET user_id=null, household_id=null WHERE id=1");
+
+        // Delete the household
+        db.execSQL("DELETE FROM household WHERE id=" + hh_id);
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+        db.close();
+        finish();
+    }
+
     public void feedPet(View view)
     {
+        txt_lastfed = findViewById(R.id.fedpetTV2);
         db = DBHelper.getDB(this);
         long unixNow = System.currentTimeMillis() / 1000L;
 
         // Get local user's household ID
-        Cursor cursor =  db.rawQuery("SELECT household_id, user_id FROM local", null);
-        cursor.moveToFirst();
-        int hh_id = cursor.getInt(0);
-        int user_id = cursor.getInt(1);
-        cursor.close();
+        int hh_id = DBHelper.getHHID(this);
+        int user_id = DBHelper.getUserID(this);
 
         // Get user name
-        cursor =  db.rawQuery("SELECT name FROM user WHERE id='" + user_id + "'", null);
+        Cursor cursor =  db.rawQuery("SELECT name FROM user WHERE id='" + user_id + "'", null);
         cursor.moveToFirst();
         String user_name = cursor.getString(0);
         cursor.close();
 
         // Get pet last fed date
-        db.execSQL(String.format(Locale.US, "UPDATE household SET pet_fed_unix=%d, last_feeder='%s' WHERE id=1", unixNow, user_name));
+        db.execSQL(String.format(Locale.US, "UPDATE household SET pet_fed_unix=%d, last_feeder='%s' WHERE id=%d", unixNow, user_name, hh_id));
         db.close();
 
         refreshLastFed();
@@ -89,13 +109,10 @@ public class FedPetActivity7 extends AppCompatActivity {
         db = DBHelper.getDB(this);
 
         // Get local user's household ID
-        Cursor cursor =  db.rawQuery("SELECT household_id FROM local", null);
-        cursor.moveToFirst();
-        int hh_id = cursor.getInt(0);
-        cursor.close();
+        int hh_id = DBHelper.getHHID(this);
 
         // Get pet last fed date
-        cursor =  db.rawQuery("SELECT pet_fed_unix, pet_name, last_feeder FROM household WHERE id='" + hh_id + "'", null);
+        Cursor cursor =  db.rawQuery("SELECT pet_fed_unix, pet_name, last_feeder FROM household WHERE id='" + hh_id + "'", null);
         cursor.moveToFirst();
         long unixLastFed = cursor.getLong(0);
         String pet_name = cursor.getString(1);
@@ -115,13 +132,11 @@ public class FedPetActivity7 extends AppCompatActivity {
             String diff = pet_name + " was fed " + calcUnixDiff(unixLastFed, unixNow) + " by " + last_feeder;
             txt_lastfed.setText(diff);
         }
-
-        System.out.println(txt_lastfed.getText());
     }
 
     private String calcUnixDiff(long u1, long u2)
     {
-        long diff = u1 - u2;
+        long diff = u2 - u1;
 
         if(diff < 60)
             return "just now";
