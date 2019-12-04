@@ -38,7 +38,8 @@ public class JoinHHActivity2 extends AppCompatActivity {
         String password = et_password.getText().toString();
         String id = et_id.getText().toString();
 
-        System.out.println(name + password + id);
+        // Hash the password for storage
+        password = Hash.hashPassword(password).get();
 
         Cursor res = db.rawQuery(String.format("SELECT id, name FROM household WHERE hex_code='%s' AND password='%s'", id, password), null);
         res.moveToFirst();

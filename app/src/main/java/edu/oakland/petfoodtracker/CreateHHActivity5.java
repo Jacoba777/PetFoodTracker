@@ -35,6 +35,10 @@ public class CreateHHActivity5 extends AppCompatActivity {
         String hh_password = et_hh_password.getText().toString();
         String hex;
 
+        // Hash the password for verification
+        hh_password = Hash.hashPassword(hh_password).get();
+        System.out.println(hh_password);
+
         if(username.length() < 1 || hh_name.length() < 1 || hh_password.length() < 1)
         {
             Toast.makeText(this, "All three of these fields are required.", Toast.LENGTH_LONG);

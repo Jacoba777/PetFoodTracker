@@ -41,8 +41,11 @@ public class ChangePasswordActivity14 extends AppCompatActivity {
             SQLiteDatabase db = DBHelper.getDB(this);
             int hh_id = DBHelper.getHHID(this);
 
+            // Hash the password for storage
+            newpassword = Hash.hashPassword(newpassword).get();
+
             db.execSQL(String.format(Locale.US, "UPDATE household SET password='%h' WHERE id=%d", newpassword, hh_id));
-            Toast.makeText(this, "The password has been updated.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The password has been updated to " + newpassword, Toast.LENGTH_SHORT).show();
             finish();
         }
     }
