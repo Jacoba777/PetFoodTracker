@@ -15,7 +15,7 @@
         <activity android:name=".UpdatePetNameActivity13" android:noHistory="true"/>
         <activity android:name=".RemoveHHActivity12" android:noHistory="true"/>
         <activity android:name=".MakeManagerActivity11" android:noHistory="true"/>
-        <activity android:name=".ManageMembersActivity10"/>
+        <activity android:name=".ManageMembersActivity10" />
         <activity android:name=".ManageHHActivity9" />
         <activity android:name=".FedPetActivity7" />
         <activity android:name=".CreateHHSuccessActivity6" android:noHistory="true"/>

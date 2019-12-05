@@ -29,12 +29,11 @@ public class ChangePasswordActivity14 extends AppCompatActivity {
 
         if(!newpassword.equals(et_pw2.getText().toString()))
         {
-            Toast.makeText(this, "The password fields do not match.", Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, newpassword + " != " + et_pw2.getText().toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The password fields do not match.", Toast.LENGTH_LONG).show();
         }
         else if( newpassword.length() < 1)
         {
-            Toast.makeText(this, "The password cannot be empty.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The password cannot be empty.", Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -44,8 +43,8 @@ public class ChangePasswordActivity14 extends AppCompatActivity {
             // Hash the password for storage
             newpassword = Hash.hashPassword(newpassword).get();
 
-            db.execSQL(String.format(Locale.US, "UPDATE household SET password='%h' WHERE id=%d", newpassword, hh_id));
-            Toast.makeText(this, "The password has been updated to " + newpassword, Toast.LENGTH_SHORT).show();
+            db.execSQL(String.format(Locale.US, "UPDATE household SET password='%s' WHERE id=%d", newpassword, hh_id));
+            Toast.makeText(this, "The password has been updated.", Toast.LENGTH_LONG).show();
             finish();
         }
     }

@@ -40,9 +40,10 @@
         android:text="SET HOUSEHOLD MANAGER"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/MMSpinner"
+        android:layout_above="@id/ManageMemberBtn2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginBottom="20dp"
+        android:onClick="setManager"/>
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
@@ -50,9 +51,10 @@
         android:text="REMOVE MEMBER"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_below="@id/ManageMemberBtn1"
+        android:layout_above="@id/ManageMemberBtn3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:onClick="removeMember"/>
     <Button
         android:layout_width="320dp"
         android:layout_height="wrap_content"
@@ -60,9 +62,10 @@
         android:text="CANCEL"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="80dp"/>
+        android:layout_marginBottom="20dp"
+        android:onClick="finish"/>
 
 
 

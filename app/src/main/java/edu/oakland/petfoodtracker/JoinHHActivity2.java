@@ -81,6 +81,8 @@ public class JoinHHActivity2 extends AppCompatActivity {
         }
         else // Either hex code is wrong or the password doesn't match.
         {
+
+
             db.close();
             Intent intent = new Intent(this, JoinHHFailActivity4.class);
             startActivity(intent);

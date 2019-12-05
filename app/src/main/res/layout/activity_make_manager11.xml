@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +25,8 @@
         android:textSize="30dp"
         android:layout_marginStart="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="220dp"/>
+        android:layout_marginBottom="220dp"
+        android:onClick="makeManager"/>
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -35,6 +35,7 @@
         android:textSize="30dp"
         android:layout_marginStart="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="100dp"
+        android:onClick="finish"/>
 
 </RelativeLayout>
