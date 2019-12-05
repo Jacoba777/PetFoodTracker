@@ -79,7 +79,8 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
-        android:layout_below="@id/HHPWTV"/>
+        android:layout_below="@id/HHPWTV"
+        android:inputType="textPassword" />
 
     <Button
         android:layout_width="300dp"

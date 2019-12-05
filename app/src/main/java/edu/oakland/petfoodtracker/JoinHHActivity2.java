@@ -36,7 +36,7 @@ public class JoinHHActivity2 extends AppCompatActivity {
 
         String name = et_name.getText().toString();
         String password = et_password.getText().toString();
-        String id = et_id.getText().toString();
+        String id = et_id.getText().toString().trim().toUpperCase();
 
         // Hash the password for storage
         password = Hash.hashPassword(password).get();
@@ -50,8 +50,16 @@ public class JoinHHActivity2 extends AppCompatActivity {
             int household_id = res.getInt(0);
             String household_name = res.getString(1);
 
-            // Add this user as a non-manager to this household
-            db.execSQL(String.format(Locale.US, "INSERT INTO user (name, household_id, manager) VALUES ('%s', '%d', 0)", name, household_id));
+            if(household_id != 4)
+            {
+                // Add this user as a non-manager to this household
+                db.execSQL(String.format(Locale.US, "INSERT INTO user (name, household_id, manager) VALUES ('%s', '%d', 0)", name, household_id));
+            }
+            else
+            {
+                // Debug household. Allow user to be manager.
+                db.execSQL(String.format(Locale.US, "INSERT INTO user (name, household_id, manager) VALUES ('%s', '%d', 1)", name, household_id));
+            }
 
             // Find the ID of the newly created user
             Cursor sqluser = db.rawQuery(String.format(Locale.US, "SELECT id FROM user WHERE name='%s' AND household_id='%d'", name, household_id), null);

@@ -30,7 +30,7 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:id="@+id/ManageHHBtn2"
-        android:text="CHANGE PET NAME"
+        android:text="UPDATE PET NAME"
         android:textSize="30sp"
         android:layout_above="@id/ManageHHBtn3"
         android:layout_centerHorizontal="true"
