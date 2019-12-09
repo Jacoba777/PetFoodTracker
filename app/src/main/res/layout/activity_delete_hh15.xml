@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@drawable/backgrounds"
     tools:context=".DeleteHHActivity15">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/DeleteHHTV1"
-        android:text="Are you sure you want to delete ? Everyone in the household \n will be removed."
+        android:text="Are you sure you want to delete  ? Everyone in the household \n will be removed."
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@drawable/backgrounds"
     tools:context=".JoinHHSuccessActivity3">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/JoinHHSuccessTV1"
         android:layout_marginTop="190dp"
-        android:text="Congrats, ! \n You've just joined  Household."
+        android:text="Congrats,! \n You've just joined  Household."
         android:textStyle="bold"
         android:layout_marginStart="20dp"
         android:textSize="30sp"/>

@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@drawable/backgrounds"
     tools:context=".CreateHHSuccessActivity6">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/CreateHHSuccessTV1"
         android:layout_marginTop="90dp"
-        android:text="Congrats, [username]! You've just created [household name]. \nPlease send this ID to your household members along with your household password."
+        android:text="Congrats, [username]! You've just created [household name] Family. \nPlease send this ID to your household members along with your household password."
         android:textStyle="bold"
         android:layout_marginStart="20dp"
         android:textSize="30sp"/>
