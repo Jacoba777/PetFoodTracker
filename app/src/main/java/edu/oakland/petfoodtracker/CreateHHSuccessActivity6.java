@@ -49,7 +49,7 @@ public class CreateHHSuccessActivity6 extends AppCompatActivity {
 
         db.close();
 
-        tv.setText(String.format(Locale.US, "Congrats, %s! You've just created %s. \n Please send this ID to your household members along with your household password.", username, hhname));
+        tv.setText(String.format(Locale.US, "Congrats, %s! You've just created %s household. \n Please send this ID to your household members along with your household password.", username, hhname));
         et.setText(hex);
     }
 

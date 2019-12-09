@@ -33,7 +33,7 @@ public class DeleteHHActivity15 extends AppCompatActivity {
         c.close();
         db.close();
 
-        tv.setText(String.format("Are you sure you want to delete %s? Everyone in the household will be removed.", hhname));
+        tv.setText(String.format("Are you sure you want to delete %s household? Everyone in the household will be removed.", hhname));
     }
 
     public void deleteHH(View view)
