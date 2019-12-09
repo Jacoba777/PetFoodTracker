@@ -107,7 +107,7 @@ ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\An
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:17:19-56
 activity#edu.oakland.petfoodtracker.ManageMembersActivity10
-ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:9-60
+ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:9-61
 	android:name
 		ADDED from C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:19-58
 activity#edu.oakland.petfoodtracker.ManageHHActivity9

@@ -38,6 +38,12 @@ public class JoinHHActivity2 extends AppCompatActivity {
         String password = et_password.getText().toString();
         String id = et_id.getText().toString().trim().toUpperCase();
 
+        if(name.length() < 1 || password.length() < 1 || id.length() < 1)
+        {
+            Toast.makeText(this, "All three of these fields are required.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // Hash the password for storage
         password = Hash.hashPassword(password).get();
 

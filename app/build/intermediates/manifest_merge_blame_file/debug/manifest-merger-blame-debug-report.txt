@@ -65,7 +65,7 @@
 38            android:noHistory="true" />
 38-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:17:57-81
 39        <activity android:name="edu.oakland.petfoodtracker.ManageMembersActivity10" />
-39-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:9-60
+39-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:9-61
 39-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:18:19-58
 40        <activity android:name="edu.oakland.petfoodtracker.ManageHHActivity9" />
 40-->C:\Users\jaustin\AndroidStudioProjects\PetFoodTracker\app\src\main\AndroidManifest.xml:19:9-55
